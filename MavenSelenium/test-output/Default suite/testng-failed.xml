@@ -3,16 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="Demo.User"/>
+      <class name="Demo.BeforeAfterClass"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="Demo.User">
+      <class name="Demo.BeforeAfterClass">
         <methods>
-          <include name="UserRegistration"/>
+          <include name="VerifyPageElements"/>
+          <include name="VerifyPageTitle"/>
+          <include name="LaunchBrowser"/>
+          <include name="CloseBrowser"/>
         </methods>
-      </class> <!-- Demo.User -->
+      </class> <!-- Demo.BeforeAfterClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
